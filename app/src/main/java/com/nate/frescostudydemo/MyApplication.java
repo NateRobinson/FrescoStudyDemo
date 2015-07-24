@@ -12,6 +12,5 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         Fresco.initialize(this);//初始化Fresco
-        //加入一行测试
     }
 }
