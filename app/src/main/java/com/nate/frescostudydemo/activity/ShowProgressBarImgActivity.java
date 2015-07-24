@@ -13,4 +13,9 @@ public class ShowProgressBarImgActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
+    @Override
+    public void bindClick(int viewId) {
+
+    }
 }

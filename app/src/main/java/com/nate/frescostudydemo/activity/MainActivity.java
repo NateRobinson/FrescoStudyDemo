@@ -1,7 +1,7 @@
 package com.nate.frescostudydemo.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
 import com.nate.frescostudydemo.R;
@@ -22,7 +22,20 @@ public class MainActivity extends BaseActivity {
     }
 
     private void initData() {
+        spimgBtn.setOnClickListener(this);
+    }
 
+    @Override
+    public void bindClick(int viewId) {
+        Intent intent =new Intent();
+        switch (viewId) {
+            case R.id.spimgBtn:
+                intent.setClass(MainActivity.this,ShowProgressBarImgActivity.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
     }
 
 }
