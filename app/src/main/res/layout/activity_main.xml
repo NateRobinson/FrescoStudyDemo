@@ -32,4 +32,11 @@
         android:layout_marginTop="8dp"
         android:text="渐进式展示图片" />
 
+    <Button
+        android:id="@+id/gifBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="GIF动画图片" />
+
 </LinearLayout>

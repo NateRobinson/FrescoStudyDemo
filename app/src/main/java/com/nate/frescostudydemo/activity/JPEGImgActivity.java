@@ -28,38 +28,6 @@ public class JPEGImgActivity extends BaseActivity {
     SimpleDraweeView myImageView;
     @Bind(R.id.askImgBtn)
     Button askImgBtn;
-    //构建ControllerListener
-    private ControllerListener listener = new ControllerListener() {
-        @Override
-        public void onSubmit(String s, Object o) {
-
-        }
-
-        @Override
-        public void onFinalImageSet(String s, Object o, Animatable anim) {
-
-        }
-
-        @Override
-        public void onIntermediateImageSet(String s, Object o) {
-
-        }
-
-        @Override
-        public void onIntermediateImageFailed(String s, Throwable throwable) {
-
-        }
-
-        @Override
-        public void onFailure(String s, Throwable throwable) {
-
-        }
-
-        @Override
-        public void onRelease(String s) {
-
-        }
-    };
 
     @Override
     public void initContentLayout() {
@@ -92,15 +60,13 @@ public class JPEGImgActivity extends BaseActivity {
                 }
             };
 
-            ImagePipelineConfig imagePipelineConfig = ImagePipelineConfig.newBuilder(this)
-                    .setProgressiveJpegConfig(jpegConfig).build();
+            ImagePipelineConfig.newBuilder(this).setProgressiveJpegConfig(jpegConfig).build();
             Uri uri = Uri.parse("http://cdn.duitang.com/uploads/item/201303/12/20130312021353_45Qix.jpeg");
             ImageRequest request = ImageRequestBuilder.newBuilderWithSource(uri).setProgressiveRenderingEnabled(true).build();
             DraweeController draweeController = Fresco.newDraweeControllerBuilder()
                     .setImageRequest(request)
                     .setTapToRetryEnabled(true)
                     .setOldController(myImageView.getController())//使用oldController可以节省不必要的内存分配
-                    .setControllerListener(listener)
                     .build();
             myImageView.setController(draweeController);
         }

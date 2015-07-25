@@ -22,6 +22,7 @@
         <activity android:name=".activity.CropImgActivity"></activity>
         <activity android:name=".activity.CircleAndCornerActivity"></activity>
         <activity android:name=".activity.JPEGImgActivity"></activity>
+        <activity android:name=".activity.GifActivity"></activity>
     </application>
 
 </manifest>
