@@ -13,33 +13,17 @@
         android:layout_marginTop="48dp"
         fresco:placeholderImage="@drawable/ic_launcher" />
 
-    <LinearLayout
+    <Button
+        android:id="@+id/circleBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:orientation="horizontal">
+        android:text="设置圆形图片" />
 
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/askImgBtn"
-            android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:layout_weight="1"
-            android:text="请求网络图片" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/cropExplainTv"
+    <Button
+        android:id="@+id/cornerBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:gravity="left|top"
-        android:textSize="16sp" />
-
-
+        android:text="设置圆角图片" />
 </LinearLayout>

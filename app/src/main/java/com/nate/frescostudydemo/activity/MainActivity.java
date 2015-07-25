@@ -17,6 +17,8 @@ public class MainActivity extends BaseActivity {
     Button spimgBtn;
     @Bind(R.id.cropBtn)
     Button cropBtn;
+    @Bind(R.id.circleAndCornerBtn)
+    Button circleAndCornerBtn;
 
     @Override
     public void initContentLayout() {
@@ -27,6 +29,7 @@ public class MainActivity extends BaseActivity {
     public void initListener() {
         spimgBtn.setOnClickListener(this);
         cropBtn.setOnClickListener(this);
+        circleAndCornerBtn.setOnClickListener(this);
     }
 
     @Override
@@ -44,6 +47,10 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.cropBtn:
                 intent.setClass(MainActivity.this, CropImgActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.circleAndCornerBtn:
+                intent.setClass(MainActivity.this, CircleAndCornerActivity.class);
                 startActivity(intent);
                 break;
             default:
