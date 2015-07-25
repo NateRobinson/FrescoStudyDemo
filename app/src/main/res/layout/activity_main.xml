@@ -39,4 +39,11 @@
         android:layout_marginTop="8dp"
         android:text="GIF动画图片" />
 
+    <Button
+        android:id="@+id/multiBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="多图请求及图片复用" />
+
 </LinearLayout>

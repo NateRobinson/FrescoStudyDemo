@@ -23,6 +23,8 @@ public class MainActivity extends BaseActivity {
     Button jpegBtn;
     @Bind(R.id.gifBtn)
     Button gifBtn;
+    @Bind(R.id.multiBtn)
+    Button multiBtn;
 
     @Override
     public void initContentLayout() {
@@ -36,6 +38,7 @@ public class MainActivity extends BaseActivity {
         circleAndCornerBtn.setOnClickListener(this);
         jpegBtn.setOnClickListener(this);
         gifBtn.setOnClickListener(this);
+        multiBtn.setOnClickListener(this);
     }
 
     @Override
@@ -65,6 +68,10 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.gifBtn:
                 intent.setClass(MainActivity.this, GifActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.multiBtn:
+                intent.setClass(MainActivity.this, MultiAndMultiPlexImgActivity.class);
                 startActivity(intent);
                 break;
             default:
