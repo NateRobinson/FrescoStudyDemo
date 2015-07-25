@@ -1,7 +1,6 @@
 package com.nate.frescostudydemo.activity;
 
 import android.net.Uri;
-import android.os.Bundle;
 import android.widget.Button;
 
 import com.facebook.drawee.generic.GenericDraweeHierarchy;
@@ -12,11 +11,10 @@ import com.nate.frescostudydemo.R;
 import com.nate.frescostudydemo.base.BaseActivity;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 
 /**
  * Created by Administrator on 2015/7/25.
- * 显示圆角和圆圈
+ * 显示圆角和圆圈图片
  */
 public class CircleAndCornerActivity extends BaseActivity {
     @Bind(R.id.my_image_view)

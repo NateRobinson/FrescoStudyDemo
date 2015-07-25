@@ -20,6 +20,7 @@ import butterknife.Bind;
 
 /**
  * Created by Administrator on 2015/7/25.
+ * 不同的裁剪图片的方式展示
  */
 public class CropImgActivity extends BaseActivity {
 

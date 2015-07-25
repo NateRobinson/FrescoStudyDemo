@@ -21,6 +21,7 @@
         <activity android:name=".activity.ShowProgressBarImgActivity"></activity>
         <activity android:name=".activity.CropImgActivity"></activity>
         <activity android:name=".activity.CircleAndCornerActivity"></activity>
+        <activity android:name=".activity.JPEGImgActivity"></activity>
     </application>
 
 </manifest>

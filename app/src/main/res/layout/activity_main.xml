@@ -25,4 +25,11 @@
         android:layout_marginTop="8dp"
         android:text="圆形和圆角图片" />
 
+    <Button
+        android:id="@+id/jpegBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="渐进式展示图片" />
+
 </LinearLayout>
