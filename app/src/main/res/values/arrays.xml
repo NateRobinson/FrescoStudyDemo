@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="croptype">
+        <item>center</item>
+        <item>centerCrop</item>
+        <item>focusCrop</item>
+        <item>centerInside</item>
+        <item>fitCenter</item>
+        <item>fitStart</item>
+        <item>fitEnd</item>
+        <item>fitXY</item>
+        <item>none</item>
+    </string-array>
+    <string-array name="croptypeexplain">
+        <item>居中，无缩放</item>
+        <item>保持宽高比缩小或放大，使得两边都大于或等于显示边界。居中显示</item>
+        <item>同centerCrop, 但居中点不是中点，而是指定的某个点,这里我设置为图片的左上角那点</item>
+        <item>使两边都在显示边界内，居中显示。如果图尺寸大于显示边界，则保持长宽比缩小图片</item>
+        <item>保持宽高比，缩小或者放大，使得图片完全显示在显示边界内。居中显示</item>
+        <item>保持宽高比，缩小或者放大，使得图片完全显示在显示边界内，不居中，和显示边界左上对齐</item>
+        <item>保持宽高比，缩小或者放大，使得图片完全显示在显示边界内，不居中，和显示边界右下对齐</item>
+        <item>不保持宽高比，填充满显示边界</item>
+        <item>如要使用tile mode显示, 需要设置为none</item>
+    </string-array>
+</resources>

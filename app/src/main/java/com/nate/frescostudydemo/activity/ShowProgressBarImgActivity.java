@@ -27,11 +27,18 @@ public class ShowProgressBarImgActivity extends BaseActivity {
     Button askImgBtn;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void initContentLayout() {
         setContentView(R.layout.show_progress_img_layout);
-        ButterKnife.bind(this);
+    }
+
+    @Override
+    public void initListener() {
         askImgBtn.setOnClickListener(this);
+    }
+
+    @Override
+    public void initData() {
+
     }
 
     @Override
@@ -40,7 +47,7 @@ public class ShowProgressBarImgActivity extends BaseActivity {
             GenericDraweeHierarchyBuilder builder = new GenericDraweeHierarchyBuilder(getResources());
             GenericDraweeHierarchy hierarchy = builder.setProgressBarImage(new ProgressBarDrawable()).build();
             myImageView.setHierarchy(hierarchy);
-            Uri uri = Uri.parse("http://img4q.duitang.com/uploads/item/201305/20/20130520115416_VrUUR.jpeg");
+            Uri uri = Uri.parse("http://img4.duitang.com/uploads/item/201211/24/20121124175330_ruKEK.jpeg");
             myImageView.setImageURI(uri);
         }
     }
