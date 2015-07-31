@@ -24,7 +24,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="缩略图预览" />
+        android:text="本地缩略图预览" />
+    <Button
+        android:id="@+id/multiplexImgBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="本地图片复用" />
 
 
 </LinearLayout>
