@@ -31,7 +31,6 @@ public class CircleAndCornerActivity extends BaseActivity {
 
     @Override
     public void initListener() {
-        //公司电脑提交测试；
         circleBtn.setOnClickListener(this);
         cornerBtn.setOnClickListener(this);
     }
