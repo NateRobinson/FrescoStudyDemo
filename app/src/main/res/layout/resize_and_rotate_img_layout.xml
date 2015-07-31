@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/my_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="48dp"
+        fresco:placeholderImage="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/resizeImgBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="修改图片大小" />
+
+    <Button
+        android:id="@+id/rotateImgBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="旋转图片" />
+
+</LinearLayout>

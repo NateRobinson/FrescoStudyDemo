@@ -3,6 +3,7 @@ package com.nate.frescostudydemo.activity;
 import android.content.Intent;
 import android.widget.Button;
 
+import com.facebook.drawee.controller.ControllerListener;
 import com.nate.frescostudydemo.R;
 import com.nate.frescostudydemo.base.BaseActivity;
 
@@ -25,6 +26,10 @@ public class MainActivity extends BaseActivity {
     Button gifBtn;
     @Bind(R.id.multiBtn)
     Button multiBtn;
+    @Bind(R.id.listenerBtn)
+    Button listenerBtn;
+    @Bind(R.id.resizeBtn)
+    Button resizeBtn;
 
     @Override
     public void initContentLayout() {
@@ -39,6 +44,8 @@ public class MainActivity extends BaseActivity {
         jpegBtn.setOnClickListener(this);
         gifBtn.setOnClickListener(this);
         multiBtn.setOnClickListener(this);
+        listenerBtn.setOnClickListener(this);
+        resizeBtn.setOnClickListener(this);
     }
 
     @Override
@@ -72,6 +79,13 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.multiBtn:
                 intent.setClass(MainActivity.this, MultiAndMultiPlexImgActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.listenerBtn:
+                intent.setClass(MainActivity.this, ControllerListenerActivity.class);
+                startActivity(intent);
+            case R.id.resizeBtn:
+                intent.setClass(MainActivity.this, ReSizeAndRotateActivity.class);
                 startActivity(intent);
                 break;
             default:

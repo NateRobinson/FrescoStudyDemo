@@ -28,6 +28,8 @@
         <activity android:name=".activity.JPEGImgActivity"></activity>
         <activity android:name=".activity.GifActivity"></activity>
         <activity android:name=".activity.MultiAndMultiPlexImgActivity"></activity>
+        <activity android:name=".activity.ControllerListenerActivity"></activity>
+        <activity android:name=".activity.ReSizeAndRotateActivity"></activity>
     </application>
 
 </manifest>
