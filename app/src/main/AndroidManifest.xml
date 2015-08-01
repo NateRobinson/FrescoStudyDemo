@@ -30,6 +30,7 @@
         <activity android:name=".activity.MultiAndMultiPlexImgActivity"></activity>
         <activity android:name=".activity.ControllerListenerActivity"></activity>
         <activity android:name=".activity.ReSizeAndRotateActivity"></activity>
+        <activity android:name=".activity.ModifyPicActivity"></activity>
     </application>
 
 </manifest>

@@ -68,6 +68,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="图片修改和旋转" />
+
+            <Button
+                android:id="@+id/modifyImgBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="修改图片" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
