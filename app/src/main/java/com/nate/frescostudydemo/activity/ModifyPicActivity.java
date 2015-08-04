@@ -4,6 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.util.TimingLogger;
 import android.widget.Button;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
@@ -40,6 +41,7 @@ public class ModifyPicActivity extends BaseActivity {
 
     @Override
     public void initData() {
+
     }
 
     @Override
