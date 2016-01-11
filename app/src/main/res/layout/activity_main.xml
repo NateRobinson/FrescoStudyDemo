@@ -75,6 +75,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="修改图片" />
+
+            <Button
+                android:id="@+id/autoSizeImgBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="动态展示图片" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

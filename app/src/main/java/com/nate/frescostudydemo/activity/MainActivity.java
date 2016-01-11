@@ -32,6 +32,8 @@ public class MainActivity extends BaseActivity {
     Button resizeBtn;
     @Bind(R.id.modifyImgBtn)
     Button modifyImgBtn;
+    @Bind(R.id.autoSizeImgBtn)
+    Button autoSizeImgBtn;
 
     @Override
     public void initContentLayout() {
@@ -49,6 +51,7 @@ public class MainActivity extends BaseActivity {
         listenerBtn.setOnClickListener(this);
         resizeBtn.setOnClickListener(this);
         modifyImgBtn.setOnClickListener(this);
+        autoSizeImgBtn.setOnClickListener(this);
     }
 
     @Override
@@ -93,6 +96,10 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.modifyImgBtn:
                 intent.setClass(MainActivity.this, ModifyPicActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.autoSizeImgBtn:
+                intent.setClass(MainActivity.this, AutoSizeActivity.class);
                 startActivity(intent);
                 break;
             default:

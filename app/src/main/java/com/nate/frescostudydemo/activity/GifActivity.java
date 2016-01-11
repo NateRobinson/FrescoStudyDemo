@@ -81,7 +81,7 @@ public class GifActivity extends BaseActivity {
     @Override
     public void bindClick(int viewId) {
         if (viewId == R.id.askImgBtn) {
-            Uri uri = Uri.parse("http://upfile.asqql.com/2009pasdfasdfic2009s305985-ts/2014-5/20145917303069852.gif");
+            Uri uri = Uri.parse("http://www.sznews.com/humor/attachement/gif/site3/20140902/4487fcd7fc66156f51db5d.gif");
             DraweeController controller = Fresco.newDraweeControllerBuilder()
                     .setUri(uri)
                     .setAutoPlayAnimations(false)

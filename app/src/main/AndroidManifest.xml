@@ -31,6 +31,7 @@
         <activity android:name=".activity.ControllerListenerActivity"></activity>
         <activity android:name=".activity.ReSizeAndRotateActivity"></activity>
         <activity android:name=".activity.ModifyPicActivity"></activity>
+        <activity android:name=".activity.AutoSizeActivity"></activity>
     </application>
 
 </manifest>
