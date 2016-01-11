@@ -61,47 +61,68 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void bindClick(int viewId) {
-        Intent intent = new Intent();
+
         switch (viewId) {
-            case R.id.spimgBtn:
+            case R.id.spimgBtn: {
+                Intent intent = new Intent();
                 intent.setClass(MainActivity.this, ShowProgressBarImgActivity.class);
                 startActivity(intent);
-                break;
-            case R.id.cropBtn:
+            }
+            break;
+            case R.id.cropBtn: {
+                Intent intent = new Intent();
                 intent.setClass(MainActivity.this, CropImgActivity.class);
                 startActivity(intent);
-                break;
-            case R.id.circleAndCornerBtn:
+            }
+            break;
+            case R.id.circleAndCornerBtn: {
+                Intent intent = new Intent();
                 intent.setClass(MainActivity.this, CircleAndCornerActivity.class);
                 startActivity(intent);
-                break;
-            case R.id.jpegBtn:
+            }
+            break;
+            case R.id.jpegBtn: {
+                Intent intent = new Intent();
                 intent.setClass(MainActivity.this, JPEGImgActivity.class);
                 startActivity(intent);
-                break;
-            case R.id.gifBtn:
+            }
+            break;
+            case R.id.gifBtn: {
+                Intent intent = new Intent();
                 intent.setClass(MainActivity.this, GifActivity.class);
                 startActivity(intent);
-                break;
-            case R.id.multiBtn:
+            }
+            break;
+            case R.id.multiBtn: {
+                Intent intent = new Intent();
                 intent.setClass(MainActivity.this, MultiAndMultiPlexImgActivity.class);
                 startActivity(intent);
-                break;
-            case R.id.listenerBtn:
+            }
+            break;
+            case R.id.listenerBtn: {
+                Intent intent = new Intent();
                 intent.setClass(MainActivity.this, ControllerListenerActivity.class);
                 startActivity(intent);
-            case R.id.resizeBtn:
+            }
+            break;
+            case R.id.resizeBtn: {
+                Intent intent = new Intent();
                 intent.setClass(MainActivity.this, ReSizeAndRotateActivity.class);
                 startActivity(intent);
-                break;
-            case R.id.modifyImgBtn:
+            }
+            break;
+            case R.id.modifyImgBtn: {
+                Intent intent = new Intent();
                 intent.setClass(MainActivity.this, ModifyPicActivity.class);
                 startActivity(intent);
-                break;
-            case R.id.autoSizeImgBtn:
+            }
+            break;
+            case R.id.autoSizeImgBtn: {
+                Intent intent = new Intent();
                 intent.setClass(MainActivity.this, AutoSizeActivity.class);
                 startActivity(intent);
-                break;
+            }
+            break;
             default:
                 break;
         }
